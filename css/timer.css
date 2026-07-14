@@ -1,0 +1,288 @@
+/* ==========================================
+   V3 GROUP OF BUSINESS
+   TIMER CHALLENGE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a,
+        #2563eb
+    );
+
+    padding:20px;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.30);
+
+}
+
+header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+header h1{
+
+    color:#ffffff;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    color:#dbeafe;
+
+    font-size:16px;
+
+}
+
+.score-board{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.box{
+
+    flex:1;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:15px;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.box h3{
+
+    color:#ffffff;
+
+    margin-bottom:10px;
+
+}
+
+.box p{
+
+    color:#22c55e;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.timer-circle{
+
+    width:220px;
+
+    height:220px;
+
+    margin:20px auto;
+
+    border-radius:50%;
+
+    border:6px solid #22c55e;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+#timer{
+
+    color:#ffffff;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.buttons button{
+
+    flex:1;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#startBtn{
+
+    background:#22c55e;
+
+    color:#ffffff;
+
+}
+
+#stopBtn{
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+}
+
+#resetBtn{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.message{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    min-height:30px;
+
+}
+
+.bottom{
+
+    margin-top:25px;
+
+}
+
+#backBtn{
+
+    width:100%;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f59e0b;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+#backBtn:hover{
+
+    background:#d97706;
+
+}
+
+@media(max-width:480px){
+
+    .timer-circle{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+    #timer{
+
+        font-size:42px;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+}
